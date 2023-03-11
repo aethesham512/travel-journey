@@ -1,0 +1,885 @@
+
+  /* BentonSans Font */
+  @font-face {
+    font-family: "BentonSans";
+    src: url('fonts/BentonSans/BentonSans-Bold.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  /* BentonSans Font */
+  @font-face {
+    font-family: "BentonSans";
+    src: url('fonts/BentonSans/BentonSans-Book.otf') format('opentype');
+    font-weight: 390;
+    font-style: normal;
+  }
+    /* BentonSans Font */
+    @font-face {
+      font-family: "BentonSans";
+      src: url('fonts/BentonSans/BentonSans-ExtraLight.otf') format('opentype');
+      font-weight: 300;
+      font-style: light;
+    }
+  /* BentonSans Font */
+  @font-face {
+    font-family: "BentonSans";
+    src: url('fonts/BentonSans/BentonSans-Medium.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* BentonSans Font */
+  @font-face {
+    font-family: "BentonSans";
+    src: url('fonts/BentonSans/BentonSans-ExtraLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  /* Guardian Font */
+  @font-face {
+  font-family: "Guardian Egyp";
+  src: url('fonts/guardian_egyptian_headline/GuardianEgyp-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  }
+  /* Guardian Font */
+  @font-face {
+  font-family: "Guardian Egyp";
+  src: url('fonts/guardian_egyptian_headline/GuardianEgyp-Bold.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  }
+  /* Guardian Font */
+  @font-face {
+  font-family: "Guardian Egyp";
+  src: url('fonts/guardian_egyptian_headline/GuardianEgyp-Light.otf') format('opentype');
+  font-weight:300;
+  font-style: light;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overscroll-behavior: none;
+  }
+
+  
+  body {
+    font-family: 'BentonSans',sans-serif, sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 150%;
+    background-color: white;
+    margin: 0;
+  }
+
+ 
+  #my-scrollbar {
+    overflow: auto;
+    background-color: #006fcf;
+  }
+
+
+  .bg-white {
+    background-color: #fff;
+  }
+  .bg-drkblue {
+    background-color: #00185a;
+  }
+  .bg-lgtblue {
+    background-color: #006FCF;
+  }
+  .bg-yellow {
+    background-color: #FDB92D;
+  }
+  .bg-trademark {
+    background: url("./images/amex-bkgd-print.png");
+    width: 100%;
+    height: auto;
+  }
+  .text-white {
+    color: #fff;
+  }
+  .text-drkblue {
+    color: #00175A;
+  }
+  .text-lgtblue {
+    color: #006fcf;
+  }
+  .text-yellow {
+    color: #FDB92D !important;
+  }
+  .primary-title{
+    font-family: 'Guardian Egyp',serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 95px;
+  }
+  .secondary-title{
+    font-family: 'Guardian Egyp',serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 60px 0;
+  }
+
+  .guardian-egypt {
+    font-family:'Guardian Egyp', serif;
+  }
+
+  .inner-header .secondary-title {
+    width: max(50%,320px);
+  }
+
+  .small-title {
+    font-family: 'BentonSans',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 120%;
+  }
+  .extra-small-text {
+    font-family: 'BentonSans',sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .card-title{
+    font-family: 'Guardian Egyp',serif;
+    font-weight: 200;
+    font-size: min(25vw,80px);
+    line-height: 120px;
+  }
+  .subscript {
+    font-weight: 400;
+    font-size: min(28px,3vw);
+    line-height: 100%;
+    margin: 15px 0px;
+  }
+  sup {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .content-card a {
+    color: #00175A;
+  }
+
+  .center-block {
+    margin: 0 auto;
+  }
+  .center-text {
+    text-align: center;
+  }
+
+  .no-margin {
+    margin: 0 !important;
+  }
+  .no-padding {
+    padding: 0 !important;
+  }
+  .intro-section, .outro-section {
+    width: clamp(50vw, 70vw, 950px);
+    margin: 0 auto;
+    padding: 1rem 0rem 4rem;
+  }
+
+  .outro-section {
+    padding-bottom: 6rem;
+  }
+
+  .outro-section img{
+    width: 100%;
+  }
+  main .bg-lgtblue {
+    color: #fff;
+  }
+  .section{
+    width: min(80%,950px);
+    margin: 0 auto;
+    padding: 3.5rem 0rem;
+  }
+
+  .two-column {
+    margin-bottom: 0rem;
+    min-height: calc(98vh + 0.1px);
+  }
+
+  .card-section {
+    display: flex;
+    align-items: stretch;
+    gap: 5%;
+    margin: 100px 0;
+  }
+
+  .card-section .section-middle {
+    align-self: center;
+    margin-top: 1%;
+  }
+
+  .card-section .section-left, .card-section .section-right {
+    width: 100%;
+
+  }
+
+  
+  .column-left, .column-right {
+    height: 100%;
+  }
+
+  .column-left {
+    overflow-y: scroll;
+  }
+
+  .card-section .pill {
+    border: 0;
+    box-shadow: none;
+    width: 95px;
+    height: 44px;
+    border-radius: 100px;
+    font-family: 'Guardian Egyp',serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+
+  .card-section hr {
+    border-color: #00175A;
+  }
+
+  .blue-card-section {
+    display: flex;
+    gap: 7%;
+    align-items: stretch;
+  }
+
+  .blue-card-section sup {
+    top: -0.5em;
+  }
+  
+  .blue-card-section .section-left, .blue-card-section .section-right {
+    width: 100%;
+  }
+
+  .blue-card-section .card-title {
+    font-size: min(80px, 7vw);
+  }
+
+  .blue-card-section hr{
+    border-color: #FDB92D;
+    margin-bottom: 1.5rem;
+  }
+
+  .blue-card-section .bg-lgtblue {
+    background-color: #006fcf;
+    padding: 30px;
+    font-family: 'BentonSans',sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 29px;
+    border-radius: 20px;
+  }
+
+
+  h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  header{
+    background: url("./images/amex-full-hero-img.png");
+    width: 100%;
+    height:auto;
+    min-height: 775px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  header, .inner-header  {
+    padding: 10vw 16vw;
+    margin: 0;
+  }
+  .inner-header {
+    background: url("./images/amex-inner-img.png");
+  }
+  .header-text {
+    width: 788px;
+  }
+
+  .inner-section-title-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: -30px;
+  }
+
+  .map-marker{
+    width: 30px;
+    margin-left: 16px;
+  }
+  
+  .column-left {
+    width: 74%;
+    max-height: 98vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    float: left;
+    background-color: #fff;
+    border-bottom: solid 1px transparent;
+  }
+  .column-left::-webkit-scrollbar {
+    display: none;
+  }
+
+  .column-left:hover{
+    scroll-behavior: smooth;
+  }
+
+  .column-right {
+    width: 26%;
+    max-height: 98vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    float: right;
+    padding: 1rem 1rem 6rem 1rem;
+    margin: 0 auto;
+    background-color: #00185a;
+    color: #fff;
+    border-bottom: solid 1px transparent;
+  }
+  .column-right::-webkit-scrollbar {
+    display: none; 
+  }
+  .column-right img {
+    width: 100%;
+    max-width: 396px;
+  }
+
+  #img-10 {
+    padding-bottom: 1rem;
+  }
+
+  .content-card {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: stretch;
+  }
+  .content-card .section-left .subscript:first-child {
+    margin-bottom: 26px;
+  }
+
+  .content-card .card-number {
+    font-family: 'Guardian Egyp',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(120px,10vw);
+    margin: 0;
+    line-height: 0.7;
+  }
+  
+  .content-card ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+  }
+  .content-card ul li{
+    font-size: 18px;
+  }
+
+  .blue-pill{
+    border-radius: 20px;
+    padding: 40px;
+    font-weight: 500;
+  }
+  .blue-card-section .bg-lgtblue sup {
+    font-family: 'BentonSans',sans-serif;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 14px;
+    line-height: 29px;
+  }
+
+  .gcdc-form-render, .gcdc-gate .gcdc-form-render p {
+    color: #000 !important;
+  }
+  .gcdc-gate .gcdc-form-render h1 {
+    color: #fff !important;
+    text-align: center;
+    margin-bottom: 50px !important;
+  }
+  .gcdc-form-message {
+    display: none;
+  }
+  .gcdc-gate .gcdc-form-render {
+    background-color: #fff !important;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  }
+  .gcdc-gate .gcdc-form-render>div.gcdc-form-group label.gcdc-form-label .gcdc-required-marker, 
+  .gcdc-gate .gcdc-form-render>div.gcdc-form-group p.gcdc-form-block-text .gcdc-required-marker
+  {
+    color:#006FCF !important;
+  }
+  .reference-list {
+    padding-left: 15px;
+  }
+  .reference-list li{
+    padding-bottom: 15px;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+  .mobile-only{
+    display: none;
+  }
+  .desktop-only{
+    display: block;
+  }
+  a.desktop-only {
+    display: inline;
+  }
+
+  .hide {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #dummy-space {
+    height: 0.1px;
+  }
+  
+/* Portrait and Landscape iPad*/
+@media only screen and (min-width: 2000px) and 
+(max-width: 3000px) {
+    .column-right img{
+      display: block;
+      margin: 0 auto;
+    }
+    .inner-header{
+      background-size: cover;
+    }
+  }
+
+/* ----------- Laptop and small desktop ----------- */
+@media only screen and (min-width: 1200px) and 
+(max-width: 1700px){ 
+    /*.intro-section, .outro-section {
+      width: 60%; 
+    }*/
+    .column-right {
+      padding: 1rem 1rem 6rem 1rem !important;
+    }
+    header, .inner-header {
+      background-position: top;
+    }
+
+}
+
+/* Portrait and Landscape iPad*/
+@media only screen 
+  and (min-device-width: 770px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  header , .inner-header{
+      background-size: cover;
+      background-position: bottom;
+      padding: 100px 25px;
+  }
+  
+  .tab.bg-drkblue img {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 100px;
+  }
+  .header {
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 25px !important; 
+  }
+  .small-header {
+    width: 100%;
+    
+  }
+  .header-text {
+    width: 630px;
+  }
+  .intro-section, .outro-section {
+    width: 100% !important;
+    padding: 1rem 1rem 5rem 1rem !important;
+  }
+  .content-card .card-number {
+    font-size: 66px;
+  }
+
+  .blue-card-section .section-left {
+    margin-right: 1rem;
+  }
+
+  .blue-card-section {
+    gap: unset;
+  }
+  
+  /* .column-right{
+    padding: 1rem 1rem;
+  } */
+
+  .subscript {
+    font-size: 20px;
+  }
+
+} 
+
+/* Extra small devices and small tablet (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .mobile-only{
+    display: block;
+  }
+  a.mobile-only{
+    display: inline;
+  }
+
+  .desktop-only{
+    display: none;
+  }
+  a.desktop-only {
+    display: none;
+  }
+  body {
+    font-family: 'BentonSans',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .primary-title {
+    font-family: 'Guardian Egyp',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 62px;
+  }
+  .column-left {
+    width: 100%;
+    max-height: 100%;
+  }
+  .column-right {
+    width: 100%;
+    max-height: 100%;
+  }
+  .section {
+    width: 90%;
+    padding: 0.4rem 0rem;
+  }
+  header, .inner-header {
+    padding: 20px 20px;
+    margin: 0;
+    
+  }
+  .inner-header {
+    background-size: cover; 
+    background-position: bottom;
+  }
+
+  header{
+    min-height: 629px;
+    background: url(./images/amex-hero-img-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: baseline;
+  }   
+  .header-text {
+    width: 370px;
+    font-size: min(44px,12vw);
+    line-height: 150%;
+  }
+
+  .bg-lgtblue:nth-child(2) {
+    /* margin-top: 20px; */
+    padding-top: 40px;
+  }
+  
+  .secondary-title {
+    font-size: 36px;
+    line-height: 120%; 
+    margin: 10px 0 40px;
+  }
+  .intro-section, .outro-section {
+    width: 90% !important;
+    padding: 0.4rem 0rem !important;
+  }
+  .map-marker{
+    width: 25px;
+    margin: 10px 0 40px 10px;
+  }
+
+  .card-section {
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 50px 0;
+  }
+  
+  .card-section .section-left {
+    width: 100%;
+    text-align: center;
+  }
+  .card-section .section-right {
+    width: 100%;
+    text-align: center;
+  }
+  .content-card .section-left, .content-card .section-right { 
+    width: 100%;
+  }
+  
+  .blue-card-section {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  .blue-card-section .card-title {
+    font-size: 75px;
+  }
+
+  .blue-card-section .bg-lgtblue {
+    font-size: 18px;
+  }
+
+  .blue-card-section .bg-lgtblue { 
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .small-header {
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .small-title {
+    margin:50px 0 25px;
+    padding-left: 15px;
+  }
+
+  .card-section .pill {
+    margin: 20px auto;
+  }
+  
+  .inner-header{
+    background: url(./images/amex-inner-img-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+  } 
+  .closing-img{
+    background: url(./images/amex-inner-img-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  } 
+.cta-btn{
+  margin: 0 !important;
+}
+
+.bg-trademark {
+  margin-top: 40px;
+}
+
+/* Accordion styles */
+.tabs {
+  overflow: hidden;
+}
+
+.tab {
+  width: 100%;
+
+  color: white;
+  border-radius: 0;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  background: #006FCF;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 15px;
+}
+.tab-label:hover {
+  background: #006FCF;
+}
+.tab-label::after {
+  content: url('./images/Vector.svg');
+  width: 42px;
+  height: 44px;
+  border-radius: 100px;
+  text-align: center;
+  transition: all 0.35s;
+  transform: rotate(180deg);
+  background-color: #FDB92D;
+  color: #fff;
+  line-height: 2;
+}
+.tab-content {
+  display: none;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+
+input:checked + .tab-label {
+  background: #006FCF;
+}
+input:checked + .tab-label::after {
+  transform: rotate(0deg);
+}
+input:checked ~ .tab-content {
+  display: block;
+
+}
+#chck1, #chck2, #chck3 {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab.bg-drkblue img{
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
+
+.tab.bg-drkblue .section{
+  margin-top: 40px;
+}
+.tab.bg-drkblue {
+  padding: 2px;
+}
+.cta-btn {
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'BentonSans',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.closing-header {
+  background: url(./images/amex-closing-img-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 350px;
+}
+.closing-section {
+  padding-top: 30px;
+}
+.small-heading {
+  font-size: 20px;
+  padding-left: 20px;
+}
+.reference-list{
+  padding: 0 0 30px 15px !important;
+}
+.inner-header .secondary-title{
+  margin-bottom: 100px;
+}
+.content-card {
+  padding: 1.4rem;
+  flex-direction: column;
+}
+
+.content-card ul {
+  padding: 0 0 0 6%;
+}
+
+.content-card .subscript {
+  font-size: 25px;
+}
+
+.content-card .card-number {
+  font-size: 130px;
+}
+
+.content-card ul li {
+  font-size: 18px;
+}
+.gcdc-gate .gcdc-form-render {
+  padding: 50px 15px 30px 15px;
+}
+.tab-close-label{
+  padding: 1rem 2rem;
+  background-color: #FDB92D;
+  color: #000;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: block;
+  width: 145px;
+}
+}
+
+@media only screen and (max-width: 420px){
+  .tab.bg-drkblue img {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .card-section .section-middle {
+    width: 30%;
+    float: none;
+    margin: 0 auto;
+  }
+  .gcdc-gate .gcdc-form-render {
+    padding: 20px !important;
+  }
+  form input {
+    position: relative;
+    opacity: 1;
+    z-index: 0;
+  }
+  .tab-close-label{
+    padding: 1rem 2rem;
+    background-color: #FDB92D;
+    color: #000;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+    width: 145px;
+  }
+  .title-margin{
+    margin-top: 40px;
+  }
+}
